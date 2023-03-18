@@ -1,13 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int main() {
-    char letter = 'a';  // start with 'a'
-    while (letter <= 'z') {
-        if (letter != 'e' && letter != 'q') {  // skip 'e' and 'q'
-            putchar(letter);  // print the letter
-        }
-        letter++;  // move to the next letter
-    }
-    putchar('\n');  // print a new line after all the letters are printed
-    return 0;
+/**
+ * main - Prints the alphabet without q and e.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
